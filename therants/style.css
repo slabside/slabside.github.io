@@ -2,11 +2,12 @@
 
 
 html {
-    background: url('images/rants-logo.jpg') no-repeat center center fixed;
+    background: rgba(0, 0, 0, 0.8) url('images/rants-logo.jpg') no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 
 @font-face {
@@ -16,17 +17,20 @@ html {
 
 
 body {
-    /*background-image: url('images/rants-logo.jpg'); !* Replace with your image *!*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: auto;*/
     font-family: 'rantsfont', sans-serif;
     margin: 0;
-    /*background-color: #f4f4f4; !* Light background *!*/
-    /*background-color: #f4f4f4; !* Light background *!*/
     color: #fff; /* Dark text */
     line-height: 1.6;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
+}
+
+html, body {
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
 }
 
 a {
@@ -55,7 +59,20 @@ a:hover {
 .content-section {
     padding: 40px;
     text-align: center;
-    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.content-section h1 {
+    color: rgb(28, 154, 13);
+}
+
+.content-section h3 {
+    color: rgb(28, 154, 13);
+}
+
+.content-section h3 {
+    color: rgb(28, 154, 13);
 }
 
 /* Header Styles */
@@ -77,7 +94,6 @@ header {
 
 .title a {
     color: #fff;
-    /*display: inline;*/
     padding: 10px;
     horiz-align: right;
 }
@@ -170,10 +186,14 @@ header {
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a semi-transparent background */
     padding: 30px;
     border-radius: 10px;
     display: inline-block; /* Ensures the background only covers the content */
+}
+
+.hero-content h1 {
+    color: rgba(31, 248, 90, 0.52);
 }
 
 .hero h1 {
@@ -187,7 +207,7 @@ header {
 
 /* backround.j Styles */
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     /*color: #fff;*/
     text-align: center;
     padding: 20px 0;
@@ -195,50 +215,75 @@ footer {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer {
-    /*background-color: rgba(0, 0, 0, 0.5);*/
-    background-color: rgba(0, 0, 0, 0.5);
-    /*color: #fff;*/
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 20px 0;
 }
-.social-links {
-    /*background-color: rgba(0, 0, 0, 0.5);*/
-}
+
 .social-links a {
-    /*color: rgba(0, 0, 0, 0.5);*/
     font-size: 24px;
     margin: 0 10px;
     color: whitesmoke;
+    opacity: 1; /* Default opacity (fully visible) */
+    transition: opacity 0.3s ease; /* Smooth transition for the effect */
 }
 
-.social-links a:hover {
+.social-links a:hover, a:focus {
     color: #ffffff;
     text-decoration: none;
+    opacity: 0.6; /* Reduced opacity on hover/focus */
 }
+
+.social-links a:active {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.4; /* Slightly lower opacity on click/touch */
+}
+
+/*.social-links a:hover {*/
+/*    color: #ffffff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.social-links a {*/
+/*    opacity: 1; !* Default opacity (fully visible) *!*/
+/*    transition: opacity 0.3s ease; !* Smooth transition for the effect *!*/
+/*}*/
+
+/*.social-links a:hover, a:focus {*/
+/*    color: #ffffff;*/
+/*    text-decoration: none;*/
+/*    opacity: 0.6; !* Reduced opacity on hover/focus *!*/
+/*}*/
+
+
 
 table {
     width: 50%;
     border-collapse: collapse;
     margin: 20px auto;
 }
+
 th, td {
     border: 1px solid #000;
     padding: 8px;
     text-align: center;
 }
+
 th {
     background-color: #f2f2f2;
 }
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .desktop-nav {
         /*display: none; !* Hide desktop navigation on smaller screens *!*/
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .mobile-menu-button {
@@ -273,7 +318,7 @@ th {
 
     .footer {
         opacity: 1;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
 }
