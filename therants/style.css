@@ -319,10 +319,9 @@ th {
             opacity: 1;
             background-color: rgba(0, 0, 0, 0.8);
         }
-    }
 
-    @media only screen and (max-width: 800px) {
-        #hideSmallScreen {
+        .title {
             display: none;
         }
     }
+
