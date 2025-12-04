@@ -64,15 +64,11 @@ a:hover {
 }
 
 .content-section h1 {
-    color: rgb(28, 154, 13);
+    color: rgb(201, 13, 13);
 }
 
 .content-section h3 {
-    color: rgb(28, 154, 13);
-}
-
-.content-section h3 {
-    color: rgb(28, 154, 13);
+    color: rgb(201, 13, 13);
 }
 
 /* Header Styles */
@@ -198,7 +194,7 @@ header {
 }
 
 .hero-content h1 {
-    color: rgba(31, 248, 90, 0.52);
+    color: rgb(201, 13, 13);
 }
 
 .hero h1 {
