@@ -261,7 +261,6 @@ header {
 /*}*/
 
 
-
 table {
     width: 50%;
     border-collapse: collapse;
@@ -281,44 +280,49 @@ th {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .desktop-nav {
-        /*display: none; !* Hide desktop navigation on smaller screens *!*/
-        background-color: rgba(0, 0, 0, 0.8);
+        .desktop-nav {
+            /*display: none; !* Hide desktop navigation on smaller screens *!*/
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .mobile-menu-button {
+            display: block; /* Show the mobile menu button */
+        }
+
+        .logo {
+            /*height: 40px; !* Adjust logo size for mobile *!*/
+            margin-left: 10px;
+        }
+
+        .logo img {
+            /*height: 40px; !* Adjust logo size for mobile *!*/
+            margin-left: 10px;
+        }
+
+        header {
+            padding: 5px 0; /* Reduce header padding on mobile */
+        }
+
+        .hero {
+            padding: 60px 0; /* Reduce hero padding on mobile */
+        }
+
+        .hero h1 {
+            font-size: 2.5em; /* Adjust hero title size for mobile */
+        }
+
+        .content-section {
+            padding: 20px; /* Reduce content section padding on mobile */
+        }
+
+        .footer {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
     }
 
-    .mobile-menu-button {
-        display: block; /* Show the mobile menu button */
+    @media only screen and (max-width: 800px) {
+        #hideSmallScreen {
+            display: none;
+        }
     }
-
-    .logo {
-        /*height: 40px; !* Adjust logo size for mobile *!*/
-        margin-left: 10px;
-    }
-
-    .logo img {
-        /*height: 40px; !* Adjust logo size for mobile *!*/
-        margin-left: 10px;
-    }
-
-    header {
-        padding: 5px 0; /* Reduce header padding on mobile */
-    }
-
-    .hero {
-        padding: 60px 0; /* Reduce hero padding on mobile */
-    }
-
-    .hero h1 {
-        font-size: 2.5em; /* Adjust hero title size for mobile */
-    }
-
-    .content-section {
-        padding: 20px; /* Reduce content section padding on mobile */
-    }
-
-    .footer {
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-}
