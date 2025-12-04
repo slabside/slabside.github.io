@@ -88,6 +88,11 @@ header {
     z-index: 100; /* Ensure the header stays on top */
 }
 
+
+.header-title h1 {
+    display: inline;
+}
+
 .title h1 {
     display: inline;
 }
